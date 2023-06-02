@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wheather API</title>
+</head>
+<body>
+        <div id="container">
+            <p class="h3 loc">loading....</p>
+            <p class="h2 condition"> loading....</p>
+            <p class="h3 temp"> loading.... </p>
+            <div id="inside">
+                <div class="li-container">
+                    <ul>
+                        <li class="humidity"> loading.... </li>
+                        <li class="pressure"> loading.... </li>
+                        <li class="min-temp"> loading.... </li>
+                        <li class="max-temp"> loading.... </li>
+                    </ul>
+                </div>
+                <div class="btn-container">
+                    <button class="btn"> Change Location </button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="modal">
+            <div id="modal-container">
+                <h2> Choose Location </h2>
+                <hr>
+                <div id="modal-form">
+                    <label for="city" class="city-label label">City/State</label>
+                    <p style="font-size: 0.9rem; padding: 4px 2px; color:gray; font-style: italic;"> note: starting letter must be capital</p>
+                    <input type="text" class="city" placeholder="City Name">
+                    <label for="city" class="country-label label">Country Code</label>
+                    <input type="text" class="country" placeholder="Country Code">
+                    <hr>
+                    <span><button class="btn close">Close</button>
+                          <button class="btn save">Save Changes</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="storage.js"></script>
+        <script type="text/javascript" src="weather.js"></script>
+        <script type="text/javascript" src="ui.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

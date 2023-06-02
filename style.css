@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Container */
+#container {
+    max-width: 700px;
+    padding: 20px 15px;
+    background-color: rgb(33, 147, 240);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+#inside {
+    max-width: 550px;
+    margin: auto;
+    padding: 30px 30px;
+    background: white;
+    color: black;
+}
+
+
+/* Fonts */
+.h3 {
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.h2 {
+    font-size: 1rem;
+    color: rgb(107, 105, 105);
+}
+
+.temp {
+    padding-bottom: 25px;
+}
+
+
+/* List items */
+
+ul {
+    list-style: none;    
+}
+
+li {
+    padding: 5px;
+    border: 0.5px solid grey;
+    border-bottom: none;
+}
+
+li:last-child {
+    border-bottom:0.5px solid grey;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    padding: 12px 25px;
+    background-color: rgb(33, 147, 240);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Modal */
+
+#modal-container {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px ;
+    /* left: 50%; */
+    /* transform: translate(-50% , -50%); */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(41, 40, 40,0.4);
+}
+
+#modal-form {
+    padding: 15px 5px;
+}
+
+#modal-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border: 0.5px solid rgb(107, 105, 105);
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+hr {
+    margin-bottom:10px;
+}
+
+
+/* Extra divs created at app.js */
+.alert {
+    text-align: center;
+    padding: 8px 15px;
+    width: fit-content;
+    margin: auto;
+    color: white;
+    border-radius: 5px;
+
+    background: red;
+}
